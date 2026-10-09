@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#082b5a">
+  <meta name="description" content="Download Balochify, an offline Balochi dictionary and grammar app created by Nodan.">
+  <title>Balochify — Balochi Dictionary &amp; Grammar</title>
+  <link rel="icon" href="assets/balochify_logo.png">
+  <style>
+    :root { color-scheme: dark; --navy:#061f45; --blue:#0d65b7; --gold:#ffc742; --cream:#fff9ee; --teal:#087c62; }
+    * { box-sizing: border-box; }
+    body { margin:0; min-height:100vh; font-family:system-ui,-apple-system,"Segoe UI",sans-serif; color:var(--cream); background:radial-gradient(ellipse at 50% -15%,#1776c7 0%,#0c407a 36%,var(--navy) 78%); }
+    .wrap { width:min(100% - 32px,1000px); margin:auto; }
+    header { display:flex; align-items:center; gap:13px; padding:22px 0; }
+    .logo { width:48px; height:48px; border-radius:15px; object-fit:cover; box-shadow:0 6px 22px #00183380; }
+    .brand { font-size:1.18rem; font-weight:800; letter-spacing:.02em; }
+    .byline { display:block; margin-top:2px; color:#c8d9ee; font-size:.77rem; font-weight:500; }
+    main { display:grid; grid-template-columns:1fr .85fr; gap:46px; align-items:center; padding:44px 0 56px; }
+    .eyebrow { display:inline-flex; gap:8px; align-items:center; color:#ffe38e; font-weight:700; font-size:.84rem; }
+    .dot { width:8px; height:8px; border-radius:50%; background:var(--gold); box-shadow:0 0 14px var(--gold); }
+    h1 { max-width:620px; margin:15px 0; font-size:clamp(2.45rem,7vw,4.55rem); line-height:1.04; letter-spacing:-.045em; }
+    h1 span { color:var(--gold); }
+    .lead { max-width:550px; color:#d7e5f4; font-size:1.08rem; line-height:1.7; }
+    .actions { display:flex; flex-wrap:wrap; gap:12px; margin:27px 0 14px; }
+    .button { display:inline-flex; justify-content:center; align-items:center; gap:10px; min-height:52px; padding:0 21px; border-radius:15px; text-decoration:none; font-weight:800; transition:transform .18s ease,box-shadow .18s ease; }
+    .button:hover { transform:translateY(-2px); box-shadow:0 10px 24px #00193355; }
+    .primary { background:linear-gradient(135deg,#ffd85b,#ffae27); color:#10284b; }
+    .secondary { border:1px solid #9bb9d9; color:var(--cream); background:#ffffff0a; }
+    .hint { color:#bdcee0; font-size:.82rem; }
+    .art { justify-self:center; width:min(100%,380px); filter:drop-shadow(0 28px 40px #00173380); animation:float 5s ease-in-out infinite; }
+    .art img { display:block; width:100%; height:auto; border-radius:28%; }
+    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
+    .features { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; padding:18px 0 42px; }
+    .feature { padding:20px; border:1px solid #c4d9ee26; border-radius:18px; background:#ffffff0b; }
+    .feature b { display:block; margin-bottom:7px; color:#ffe08a; }
+    .feature p { margin:0; color:#d1deec; font-size:.92rem; line-height:1.55; }
+    .notice { margin:0 0 28px; padding:15px 17px; border-left:4px solid var(--gold); border-radius:10px; background:#ffffff0c; color:#e2ebf6; line-height:1.55; }
+    footer { padding:20px 0 30px; border-top:1px solid #d0e2f326; color:#bdcee0; font-size:.86rem; }
+    footer a { color:#ffe08a; }
+    @media(max-width:720px) { main { grid-template-columns:1fr; gap:24px; padding-top:28px; } .art { grid-row:1; width:min(68%,280px); } .features { grid-template-columns:1fr; } }
+    @media(prefers-reduced-motion:reduce) { *,*::before,*::after { animation-duration:.01ms!important; animation-iteration-count:1!important; scroll-behavior:auto!important; transition-duration:.01ms!important; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img class="logo" src="assets/balochify_logo.png" alt="Balochify logo">
+      <div class="brand">Balochify<span class="byline">Created by Nodan</span></div>
+    </header>
+    <main>
+      <section>
+        <div class="eyebrow"><span class="dot"></span> Learn and keep Balochi close</div>
+        <h1>Balochi words.<br><span>One simple app.</span></h1>
+        <p class="lead">A calm, offline-first place for Balochi dictionary searches, grammar learning, and personal notes.</p>
+        <div class="actions">
+          <!-- Replace YOUR_GITHUB_USERNAME before publishing. Upload the signed APK to a release on balochify-download-site. -->
+          <a class="button primary" href="https://github.com/YOUR_GITHUB_USERNAME/balochify-download-site/releases/latest/download/Balochify.apk" aria-label="Download the Balochify Android APK">⬇ <span>Download for Android</span></a>
+          <a class="button secondary" href="#features">Explore features</a>
+        </div>
+        <p class="hint">Android APK • Direct download • Not distributed through Google Play</p>
+      </section>
+      <div class="art"><img src="assets/balochify_logo.png" alt="Balochify dictionary and grammar app artwork"></div>
+    </main>
+    <div class="notice"><strong>Preview:</strong> The Android app and dictionary content are still being prepared. The download button will work after the signed APK is uploaded to the GitHub release.</div>
+    <section id="features" class="features" aria-label="App features">
+      <article class="feature"><b>Dictionary</b><p>Balochi, English, and Urdu search modes are planned. Entries will retain their book sources.</p></article>
+      <article class="feature"><b>Balochi grammar</b><p>Grammar material will be included only when supported by the supplied books.</p></article>
+      <article class="feature"><b>Notes offline</b><p>Keep personal word notes on your phone, without needing an account.</p></article>
+    </section>
+    <footer>Made for Balochi learners · Created by Nodan</footer>
+  </div>
+</body>
+</html>
